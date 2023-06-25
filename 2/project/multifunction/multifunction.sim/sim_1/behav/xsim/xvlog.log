@@ -1,0 +1,39 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmax.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmax
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmin
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/multifunction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select
+WARNING: [VRFC 10-2379] empty port in module declaration [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/select.v:29]
+INFO: [VRFC 10-311] analyzing module mmin
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'mmin' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmin.v:9]
+INFO: [VRFC 10-311] analyzing module mmax
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'mmax' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmax.v:9]
+INFO: [VRFC 10-311] analyzing module adder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'adder' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/adder.v:9]
+INFO: [VRFC 10-311] analyzing module comparator
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'comparator' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/comparator.v:9]
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module multifunction
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/select.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'select' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/select.v:9]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/seven_segment_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/seven_segment_decoder.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/tb_multifunction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select
+INFO: [VRFC 10-311] analyzing module mmin
+INFO: [VRFC 10-311] analyzing module mmax
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module multifunction
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'multifunction' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/multifunction.v:8]
+INFO: [VRFC 10-311] analyzing module tb_multifunction
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

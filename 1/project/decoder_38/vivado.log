@@ -1,0 +1,984 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun 25 21:22:03 2023
+# Process ID: 16696
+# Current directory: D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4388 D:\BaiduSyncdisk\Repos\verilog-design\1\project\decoder_38\decoder_38.xpr
+# Log file: D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/vivado.log
+# Journal file: D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 875.598 ; gain = 218.617
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_decoder_38' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_decoder_38_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.srcs/sim_1/imports/src/decoder_38.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_38
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.srcs/sim_1/imports/src/tb_decoder_38.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder_38
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'decoder_38' [D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.srcs/sim_1/imports/src/decoder_38.v:9]
+INFO: [VRFC 10-311] analyzing module tb_decoder_38
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 3e9c98669fe947c5b6dc490f5bd20492 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_decoder_38_behav xil_defaultlib.tb_decoder_38 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.decoder_38
+Compiling module xil_defaultlib.tb_decoder_38
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_decoder_38_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.sim/sim_1/behav/xsim/xsim.dir/tb_decoder_38_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 25 21:23:29 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_decoder_38_behav -key {Behavioral:sim_1:Functional:tb_decoder_38} -tclbatch {tb_decoder_38.tcl} -view {D:/BaiduSyncdisk/Repos/verilog-design/1/wave/decoder_38.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/BaiduSyncdisk/Repos/verilog-design/1/wave/decoder_38.wcfg
+source tb_decoder_38.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 80 ns : File "D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.srcs/sim_1/imports/src/tb_decoder_38.v" Line 26
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_decoder_38_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 947.875 ; gain = 51.867
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+[Sun Jun 25 21:24:54 2023] Launched synth_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun 25 21:34:40 2023] Launched impl_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun 25 21:35:40 2023] Launched impl_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.runs/impl_1/decoder_38.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.runs/impl_1/decoder_38.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+close_hw
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+file copy -force D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.runs/impl_1/decoder_38.bit D:/BaiduSyncdisk/Repos/verilog-design/1/bitstream/decoder_38.bit
+close_project
+open_project D:/BaiduSyncdisk/Repos/verilog-design/1/project/decoder_38/decoder_38.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+close_project
+open_project D:/BaiduSyncdisk/Repos/verilog-design/1/project/seven_segment_decoder/seven_segment_decoder.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+close_project
+open_project D:/BaiduSyncdisk/Repos/verilog-design/1/project/priority_encoder_83/priority_encoder_83.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+close_project
+open_project D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmin.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/seven_segment_decoder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/adder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/comparator.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmax.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/multifunction.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/select.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmin.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/seven_segment_decoder.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/adder.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/comparator.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmax.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/multifunction.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/select.v}
+file delete -force D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmin.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/seven_segment_decoder.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/adder.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/comparator.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmax.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/multifunction.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/select.v
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmin.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/seven_segment_decoder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/comparator.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/adder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/select.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmax.v] -no_script -reset -force -quiet
+remove_files  {D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmin.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/seven_segment_decoder.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/comparator.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/adder.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/select.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmax.v}
+file delete -force D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmin.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/seven_segment_decoder.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/comparator.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/adder.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/select.v D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmax.v
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/tb_multifunction.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/tb_multifunction.v
+file delete -force D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/tb_multifunction.v
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/multifunction.v] -no_script -reset -force -quiet
+remove_files  D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/multifunction.v
+file delete -force D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/multifunction.v
+import_files -norecurse {D:/BaiduSyncdisk/Repos/verilog-design/2/src/comparator.v D:/BaiduSyncdisk/Repos/verilog-design/2/src/mmin.v D:/BaiduSyncdisk/Repos/verilog-design/2/src/seven_segment_decoder.v D:/BaiduSyncdisk/Repos/verilog-design/2/src/multifunction.v D:/BaiduSyncdisk/Repos/verilog-design/2/src/mmax.v D:/BaiduSyncdisk/Repos/verilog-design/2/src/select.v D:/BaiduSyncdisk/Repos/verilog-design/2/src/adder.v}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse D:/BaiduSyncdisk/Repos/verilog-design/2/src/tb_multifunction.v
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/adder.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/adder.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_multifunction' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_multifunction_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmax.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmax
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmin
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/multifunction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select
+WARNING: [VRFC 10-2379] empty port in module declaration [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/select.v:29]
+INFO: [VRFC 10-311] analyzing module mmin
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'mmin' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmin.v:9]
+INFO: [VRFC 10-311] analyzing module mmax
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'mmax' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmax.v:9]
+INFO: [VRFC 10-311] analyzing module adder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'adder' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/adder.v:9]
+INFO: [VRFC 10-311] analyzing module comparator
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'comparator' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/comparator.v:9]
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module multifunction
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/select.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'select' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/select.v:9]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/seven_segment_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/seven_segment_decoder.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/tb_multifunction.v" into library xil_defaultlib
+ERROR: [VRFC 10-3195] cannot open include file 'multifunction.v' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/tb_multifunction.v:2]
+INFO: [VRFC 10-311] analyzing module tb_multifunction
+ERROR: [VRFC 10-2865] module 'tb_multifunction' ignored due to previous errors [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/tb_multifunction.v:4]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {D:/BaiduSyncdisk/Repos/verilog-design/2/src/comparator.v D:/BaiduSyncdisk/Repos/verilog-design/2/src/mmin.v D:/BaiduSyncdisk/Repos/verilog-design/2/src/seven_segment_decoder.v D:/BaiduSyncdisk/Repos/verilog-design/2/src/multifunction.v D:/BaiduSyncdisk/Repos/verilog-design/2/src/mmax.v D:/BaiduSyncdisk/Repos/verilog-design/2/src/select.v D:/BaiduSyncdisk/Repos/verilog-design/2/src/adder.v}
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_multifunction' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_multifunction_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmax.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmax
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmin.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmin
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/multifunction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select
+WARNING: [VRFC 10-2379] empty port in module declaration [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/select.v:29]
+INFO: [VRFC 10-311] analyzing module mmin
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'mmin' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmin.v:9]
+INFO: [VRFC 10-311] analyzing module mmax
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'mmax' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/mmax.v:9]
+INFO: [VRFC 10-311] analyzing module adder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'adder' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/adder.v:9]
+INFO: [VRFC 10-311] analyzing module comparator
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'comparator' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/comparator.v:9]
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module multifunction
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/select.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'select' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/select.v:9]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/seven_segment_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/seven_segment_decoder.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/tb_multifunction.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module select
+INFO: [VRFC 10-311] analyzing module mmin
+INFO: [VRFC 10-311] analyzing module mmax
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module multifunction
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'multifunction' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/multifunction.v:8]
+INFO: [VRFC 10-311] analyzing module tb_multifunction
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto e8147490538d408db9c166b8ba81464b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_multifunction_behav xil_defaultlib.tb_multifunction xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.select
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.comparator
+Compiling module xil_defaultlib.mmax
+Compiling module xil_defaultlib.mmin
+Compiling module xil_defaultlib.seven_segment_decoder
+Compiling module xil_defaultlib.multifunction
+Compiling module xil_defaultlib.tb_multifunction
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_multifunction_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.sim/sim_1/behav/xsim/xsim.dir/tb_multifunction_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 25 21:46:15 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_multifunction_behav -key {Behavioral:sim_1:Functional:tb_multifunction} -tclbatch {tb_multifunction.tcl} -view {D:/BaiduSyncdisk/Repos/verilog-design/2/wave/multifunction.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/BaiduSyncdisk/Repos/verilog-design/2/wave/multifunction.wcfg
+source tb_multifunction.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 200 ns : File "D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sim_1/imports/src/tb_multifunction.v" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_multifunction_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2131.609 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-3756] overwriting previous definition of module 'adder' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/adder.v:9]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'comparator' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/comparator.v:9]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'mmax' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmax.v:9]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'mmin' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmin.v:9]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'select' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/select.v:9]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/seven_segment_decoder.v:15]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'adder()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 9 of file D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/adder.v
+Duplicate found at line 9 of file D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/multifunction.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'comparator()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 9 of file D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/comparator.v
+Duplicate found at line 9 of file D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/multifunction.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mmax()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 9 of file D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmax.v
+Duplicate found at line 9 of file D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/multifunction.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mmin()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 9 of file D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/mmin.v
+Duplicate found at line 9 of file D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/multifunction.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'select()' found in library 'xil_defaultlib'
+Duplicate found at line 9 of file D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/multifunction.v
+	(Active) Duplicate found at line 9 of file D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/select.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'seven_segment_decoder()' found in library 'xil_defaultlib'
+Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/multifunction.v
+	(Active) Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.srcs/sources_1/imports/src/seven_segment_decoder.v
+[Sun Jun 25 21:46:33 2023] Launched synth_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun 25 21:51:45 2023] Launched impl_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun 25 21:56:17 2023] Launched impl_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.runs/impl_1/multifunction.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.runs/impl_1/multifunction.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+file copy -force D:/BaiduSyncdisk/Repos/verilog-design/2/project/multifunction/multifunction.runs/impl_1/multifunction.bit D:/BaiduSyncdisk/Repos/verilog-design/2/bitstream/multifunction.bit
+close_project
+open_project D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_scan_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_scan_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_display
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'scan_display' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v:8]
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module scan_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/tb_scan_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_display
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module scan_top
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'scan_top' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v:4]
+INFO: [VRFC 10-311] analyzing module tb_scan_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2716a9bb7e714cd48e49b9a581f92904 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_scan_top_behav xil_defaultlib.tb_scan_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.scan_display
+Compiling module xil_defaultlib.seven_segment_decoder
+Compiling module xil_defaultlib.scan_top
+Compiling module xil_defaultlib.tb_scan_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_scan_top_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim/xsim.dir/tb_scan_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 25 22:15:14 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_scan_top_behav -key {Behavioral:sim_1:Functional:tb_scan_top} -tclbatch {tb_scan_top.tcl} -view {D:/BaiduSyncdisk/Repos/verilog-design/3/wave/scan.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/BaiduSyncdisk/Repos/verilog-design/3/wave/scan.wcfg
+source tb_scan_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_scan_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2131.609 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-3756] overwriting previous definition of module 'scan_display' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v:8]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v:15]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'scan_display()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v
+Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'seven_segment_decoder()' found in library 'xil_defaultlib'
+Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+	(Active) Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v
+[Sun Jun 25 22:16:20 2023] Launched synth_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun 25 22:17:04 2023] Launched impl_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun 25 22:18:52 2023] Launched impl_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/scan_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/scan_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+file copy -force D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/scan_top.bit D:/BaiduSyncdisk/Repos/verilog-design/3/bitstream/263.bit
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+close_hw
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_scan_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_scan_top_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2716a9bb7e714cd48e49b9a581f92904 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_scan_top_behav xil_defaultlib.tb_scan_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_scan_top_behav -key {Behavioral:sim_1:Functional:tb_scan_top} -tclbatch {tb_scan_top.tcl} -view {D:/BaiduSyncdisk/Repos/verilog-design/3/wave/scan.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/BaiduSyncdisk/Repos/verilog-design/3/wave/scan.wcfg
+source tb_scan_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_scan_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-3756] overwriting previous definition of module 'scan_display' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v:8]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v:15]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'scan_display()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v
+Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'seven_segment_decoder()' found in library 'xil_defaultlib'
+Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+	(Active) Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v
+[Sun Jun 25 22:25:01 2023] Launched synth_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/synth_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-3756] overwriting previous definition of module 'scan_display' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v:8]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v:15]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'scan_display()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v
+Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'seven_segment_decoder()' found in library 'xil_defaultlib'
+Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+	(Active) Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v
+[Sun Jun 25 22:25:46 2023] Launched synth_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+open_project D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_scan_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_scan_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_display
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'scan_display' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v:8]
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module scan_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/tb_scan_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_display
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module scan_top
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'scan_top' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v:4]
+INFO: [VRFC 10-311] analyzing module tb_scan_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2716a9bb7e714cd48e49b9a581f92904 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_scan_top_behav xil_defaultlib.tb_scan_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.scan_display
+Compiling module xil_defaultlib.seven_segment_decoder
+Compiling module xil_defaultlib.scan_top
+Compiling module xil_defaultlib.tb_scan_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_scan_top_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_scan_top_behav -key {Behavioral:sim_1:Functional:tb_scan_top} -tclbatch {tb_scan_top.tcl} -view {D:/BaiduSyncdisk/Repos/verilog-design/3/wave/scan.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/BaiduSyncdisk/Repos/verilog-design/3/wave/scan.wcfg
+source tb_scan_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_scan_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/synth_1
+
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-3756] overwriting previous definition of module 'scan_display' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v:8]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v:15]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'scan_display()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v
+Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'seven_segment_decoder()' found in library 'xil_defaultlib'
+Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+	(Active) Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v
+[Sun Jun 25 22:29:30 2023] Launched synth_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+close_project
+open_project D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v] -no_script -reset -force -quiet
+remove_files  {D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v}
+file delete -force D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/tb_scan_top.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/tb_scan_top.v D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v}
+file delete -force D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/tb_scan_top.v D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v] -no_script -reset -force -quiet
+remove_files  D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v
+import_files -norecurse {D:/BaiduSyncdisk/Repos/verilog-design/3/src/scan_top.v D:/BaiduSyncdisk/Repos/verilog-design/3/src/seven_segment_decoder.v D:/BaiduSyncdisk/Repos/verilog-design/3/src/scan_display.v}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {D:/BaiduSyncdisk/Repos/verilog-design/3/src/scan_top.v D:/BaiduSyncdisk/Repos/verilog-design/3/src/seven_segment_decoder.v D:/BaiduSyncdisk/Repos/verilog-design/3/src/tb_scan_top.v D:/BaiduSyncdisk/Repos/verilog-design/3/src/scan_display.v}
+update_compile_order -fileset sim_1
+reset_run synth_1
+update_compile_order -fileset sim_1
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-3756] overwriting previous definition of module 'scan_display' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v:8]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v:15]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'scan_display()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v
+Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'seven_segment_decoder()' found in library 'xil_defaultlib'
+Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+	(Active) Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v
+[Sun Jun 25 22:38:33 2023] Launched synth_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/synth_1/runme.log
+export_ip_user_files -of_objects  [get_files D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/constrs_1/new/scan.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/constrs_1/new/scan.xdc
+file mkdir D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/constrs_1
+file mkdir D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/constrs_1/new
+close [ open D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/constrs_1/new/scan.xdc w ]
+add_files -fileset constrs_1 D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/constrs_1/new/scan.xdc
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-3756] overwriting previous definition of module 'scan_display' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v:8]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v:15]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'scan_display()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v
+Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'seven_segment_decoder()' found in library 'xil_defaultlib'
+Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+	(Active) Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v
+[Sun Jun 25 22:43:13 2023] Launched synth_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun 25 22:43:43 2023] Launched impl_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun 25 22:44:45 2023] Launched impl_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/scan_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/scan_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+file copy -force D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/scan_top.bit D:/BaiduSyncdisk/Repos/verilog-design/3/bitstream/226.bit
+close_hw
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-3756] overwriting previous definition of module 'scan_display' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v:8]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v:15]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'scan_display()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v
+Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'seven_segment_decoder()' found in library 'xil_defaultlib'
+Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+	(Active) Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v
+[Sun Jun 25 22:50:37 2023] Launched synth_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun 25 22:51:09 2023] Launched impl_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun 25 22:52:05 2023] Launched impl_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/scan_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/scan_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+file copy -force D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/scan_top.bit D:/BaiduSyncdisk/Repos/verilog-design/3/bitstream/26.bit
+close_hw
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+WARNING: [HDL 9-3756] overwriting previous definition of module 'scan_display' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v:8]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v:15]
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'scan_display()' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_display.v
+Duplicate found at line 8 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'seven_segment_decoder()' found in library 'xil_defaultlib'
+Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/scan_top.v
+	(Active) Duplicate found at line 15 of file D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sources_1/imports/src/seven_segment_decoder.v
+[Sun Jun 25 22:54:34 2023] Launched synth_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Sun Jun 25 22:55:07 2023] Launched impl_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Jun 25 22:56:12 2023] Launched impl_1...
+Run output will be captured here: D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/1234-tulA
+set_property PROGRAM.FILE {D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/scan_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/scan_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+file copy -force D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.runs/impl_1/scan_top.bit D:/BaiduSyncdisk/Repos/verilog-design/3/bitstream/216.bit
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_scan_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_scan_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_display
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'scan_display' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v:8]
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module scan_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/tb_scan_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_display
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module scan_top
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'scan_top' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v:4]
+INFO: [VRFC 10-311] analyzing module tb_scan_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 2716a9bb7e714cd48e49b9a581f92904 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_scan_top_behav xil_defaultlib.tb_scan_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.scan_display
+Compiling module xil_defaultlib.seven_segment_decoder
+Compiling module xil_defaultlib.scan_top
+Compiling module xil_defaultlib.tb_scan_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_scan_top_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim/xsim.dir/tb_scan_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 25 22:59:03 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_scan_top_behav -key {Behavioral:sim_1:Functional:tb_scan_top} -tclbatch {tb_scan_top.tcl} -view {D:/BaiduSyncdisk/Repos/verilog-design/3/wave/scan.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+open_wave_config D:/BaiduSyncdisk/Repos/verilog-design/3/wave/scan.wcfg
+source tb_scan_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 200 ns : File "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/tb_scan_top.v" Line 41
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_scan_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 2511.766 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Jun 25 23:01:15 2023...
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 25 23:01:17 2023...

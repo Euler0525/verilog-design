@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_multifunction_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_multifunction" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="200000001fs"></ZoomEndTime>
+      <Cursor1Time time="67921000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="126"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/tb_multifunction/din1" type="array">
+      <obj_property name="ElementShortName">din1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">din1[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/din2" type="array">
+      <obj_property name="ElementShortName">din2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">din2[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/b_add" type="logic">
+      <obj_property name="ElementShortName">b_add</obj_property>
+      <obj_property name="ObjectShortName">b_add</obj_property>
+      <obj_property name="CustomSignalColor">#00FFFF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/b_cmp" type="logic">
+      <obj_property name="ElementShortName">b_cmp</obj_property>
+      <obj_property name="ObjectShortName">b_cmp</obj_property>
+      <obj_property name="CustomSignalColor">#00FF7F</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/b_max" type="logic">
+      <obj_property name="ElementShortName">b_max</obj_property>
+      <obj_property name="ObjectShortName">b_max</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/b_min" type="logic">
+      <obj_property name="ElementShortName">b_min</obj_property>
+      <obj_property name="ObjectShortName">b_min</obj_property>
+      <obj_property name="CustomSignalColor">#FAAFBE</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/dout1" type="array">
+      <obj_property name="ElementShortName">dout1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">dout1[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/dout2" type="array">
+      <obj_property name="ElementShortName">dout2[6:0]</obj_property>
+      <obj_property name="ObjectShortName">dout2[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/dp_out1" type="logic">
+      <obj_property name="ElementShortName">dp_out1</obj_property>
+      <obj_property name="ObjectShortName">dp_out1</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/dp_out2" type="logic">
+      <obj_property name="ElementShortName">dp_out2</obj_property>
+      <obj_property name="ObjectShortName">dp_out2</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/select1" type="logic">
+      <obj_property name="ElementShortName">select1</obj_property>
+      <obj_property name="ObjectShortName">select1</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/select2" type="logic">
+      <obj_property name="ElementShortName">select2</obj_property>
+      <obj_property name="ObjectShortName">select2</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/led1" type="logic">
+      <obj_property name="ElementShortName">led1</obj_property>
+      <obj_property name="ObjectShortName">led1</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_multifunction/led2" type="logic">
+      <obj_property name="ElementShortName">led2</obj_property>
+      <obj_property name="ObjectShortName">led2</obj_property>
+      <obj_property name="CustomSignalColor">#008080</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

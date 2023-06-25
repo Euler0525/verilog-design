@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../scan.srcs/sim_1/imports/src/scan_display.v" \
+"../../../../scan.srcs/sim_1/imports/src/scan_top.v" \
+"../../../../scan.srcs/sim_1/imports/src/seven_segment_decoder.v" \
+"../../../../scan.srcs/sim_1/imports/src/tb_scan_top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

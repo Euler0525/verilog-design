@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/1/project/comparator_4/comparator_4.srcs/sim_1/imports/src/comparator_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/1/project/comparator_4/comparator_4.srcs/sim_1/imports/src/tb_comparator_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator_4
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'comparator_4' [D:/BaiduSyncdisk/Repos/verilog-design/1/project/comparator_4/comparator_4.srcs/sim_1/imports/src/comparator_4.v:9]
+INFO: [VRFC 10-311] analyzing module tb_comparator_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/1/project/comparator_4/comparator_4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

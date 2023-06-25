@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v,1687705133,verilog,,D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v,,scan_display,,,,,,,,
+D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v,1687704485,verilog,,D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v,D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v;D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v,scan_top,,,,,,,,
+D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v,1687704528,verilog,,D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/tb_scan_top.v,,seven_segment_decoder,,,,,,,,
+D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/tb_scan_top.v,1687703866,verilog,,,D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v,tb_scan_top,,,,,,,,

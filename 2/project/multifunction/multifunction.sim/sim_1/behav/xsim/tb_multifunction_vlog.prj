@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../multifunction.srcs/sim_1/imports/src/adder.v" \
+"../../../../multifunction.srcs/sim_1/imports/src/comparator.v" \
+"../../../../multifunction.srcs/sim_1/imports/src/mmax.v" \
+"../../../../multifunction.srcs/sim_1/imports/src/mmin.v" \
+"../../../../multifunction.srcs/sim_1/imports/src/multifunction.v" \
+"../../../../multifunction.srcs/sim_1/imports/src/select.v" \
+"../../../../multifunction.srcs/sim_1/imports/src/seven_segment_decoder.v" \
+"../../../../multifunction.srcs/sim_1/imports/src/tb_multifunction.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

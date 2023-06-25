@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_display
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'scan_display' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_display.v:8]
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module scan_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/seven_segment_decoder.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/tb_scan_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module scan_display
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-311] analyzing module scan_top
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'scan_top' [D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.srcs/sim_1/imports/src/scan_top.v:4]
+INFO: [VRFC 10-311] analyzing module tb_scan_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/3/project/scan/scan.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

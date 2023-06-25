@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1687700793">
+  <File Type="PA-TCL" Name="multifunction.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="multifunction_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="multifunction_reports.tcl"/>
+  <File Type="RDS-RDS" Name="multifunction.vds"/>
+  <File Type="RDS-UTIL" Name="multifunction_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="multifunction_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="multifunction.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="multifunction_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="multifunction_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/adder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/adder.v"/>
+        <Attr Name="ImportTime" Val="1687700089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/comparator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/comparator.v"/>
+        <Attr Name="ImportTime" Val="1687571658"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/mmax.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/mmax.v"/>
+        <Attr Name="ImportTime" Val="1686875936"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/mmin.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/mmin.v"/>
+        <Attr Name="ImportTime" Val="1686885852"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/select.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/select.v"/>
+        <Attr Name="ImportTime" Val="1686877119"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/seven_segment_decoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/seven_segment_decoder.v"/>
+        <Attr Name="ImportTime" Val="1686963054"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/multifunction.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../src/multifunction.v"/>
+        <Attr Name="ImportTime" Val="1687570875"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="multifunction"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/multifunction.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

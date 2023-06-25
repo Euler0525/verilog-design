@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun 25 20:36:07 2023
+# Process ID: 19824
+# Current directory: D:/BaiduSyncdisk/Repos/verilog-design/1/project/comparator_4/comparator_4.runs/impl_1
+# Command line: vivado.exe -log comparator_4.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source comparator_4.tcl -notrace
+# Log file: D:/BaiduSyncdisk/Repos/verilog-design/1/project/comparator_4/comparator_4.runs/impl_1/comparator_4.vdi
+# Journal file: D:/BaiduSyncdisk/Repos/verilog-design/1/project/comparator_4/comparator_4.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source comparator_4.tcl -notrace

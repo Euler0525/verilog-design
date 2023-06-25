@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/1/project/priority_encoder_83/priority_encoder_83.srcs/sim_1/imports/src/priority_encoder_83.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority_encoder_83
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/1/project/priority_encoder_83/priority_encoder_83.srcs/sim_1/imports/src/tb_priority_encoder_83.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module priority_encoder_83
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'priority_encoder_83' [D:/BaiduSyncdisk/Repos/verilog-design/1/project/priority_encoder_83/priority_encoder_83.srcs/sim_1/imports/src/priority_encoder_83.v:9]
+INFO: [VRFC 10-311] analyzing module tb_priority_encoder_83
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/1/project/priority_encoder_83/priority_encoder_83.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

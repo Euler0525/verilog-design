@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/1/project/seven_segment_decoder/seven_segment_decoder.srcs/sim_1/imports/src/seven_segment_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/1/project/seven_segment_decoder/seven_segment_decoder.srcs/sim_1/imports/src/tb_seven_segment_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seven_segment_decoder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'seven_segment_decoder' [D:/BaiduSyncdisk/Repos/verilog-design/1/project/seven_segment_decoder/seven_segment_decoder.srcs/sim_1/imports/src/seven_segment_decoder.v:15]
+INFO: [VRFC 10-311] analyzing module tb_seven_segment_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/BaiduSyncdisk/Repos/verilog-design/1/project/seven_segment_decoder/seven_segment_decoder.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
